@@ -14,9 +14,13 @@ print("Listening on " + HOST + ":" + str(PORT))
 client_connection, client_address = server_socket.accept()
 print("Connection from: " + str(client_address))
 
-request_data = client_connection.recv(1024).decode('utf-8')
-print("Received request:")
+raw_bytes = client_connection.recv(1024)
+
+request_data = raw_bytes.decode('utf-8', errors='replace')
+
+print("\n--- INCOMING MESSAGE ---")
 print(request_data)
+print("------------------------\n")
 
 client_connection.close()
 print("Connection closed")
