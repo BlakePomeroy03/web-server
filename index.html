@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blake | Systems & Infrastructure</title>
+    <style>
+        body {
+            background-color: #0d1117;
+            color: #c9d1d9;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2, h3 { color: #58a6ff; }
+        .prompt::before {
+            content: "blake@server:~$ ";
+            color: #3fb950;
+        }
+        a { color: #58a6ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .section { margin-bottom: 40px; border-left: 2px solid #30363d; padding-left: 20px; }
+        .skill-tag {
+            display: inline-block;
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin: 2px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1 class="prompt">cat resume.txt</h1>
+        <p><strong>Location:</strong> Newport Beach, CA / Boulder, CO</p>
+        <p><strong>Status:</strong> Seeking Junior Systems Administration, NOC, or Data Center roles.</p>
+    </div>
+
+    <div class="section">
+        <h2>> Infrastructure & Projects</h2>
+        
+        <h3>Custom HTTP Web Server (This Website)</h3>
+        <p>Engineered a raw TCP socket server in Python. Bypassed high-level frameworks to manually handle network sockets, parse HTTP GET requests, and route file system responses.</p>
+        
+        <h3>Bare-Metal Home Datacenter</h3>
+        <p>Provisioned and manage a local Dell Wyse thin-client running DietPi. Currently hosting local DNS sinkholes (Pi-hole) and Home Assistant for network automation and traffic monitoring.</p>
+        
+        <h3>Linux Workstation Configuration</h3>
+        <p>Configured a Mac M2 to run Linux. Proficient in managing headless Debian VPS environments via SSH for remote task automation.</p>
+    </div>
+
+    <div class="section">
+        <h2>> Technical Core</h2>
+        <p>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Linux (Debian/Arch/Fedora)</span>
+            <span class="skill-tag">TCP/IP Networking</span>
+            <span class="skill-tag">Git Version Control</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Bash Scripting</span>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>> Contact & Code</h2>
+        <p>GitHub: <a href="https://github.com/BlakePomeroy03">github.com/BlakePomeroy03</a></p>
+    </div>
+
+</body>
+</html>
